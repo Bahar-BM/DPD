@@ -1,0 +1,16 @@
+ICA  c1-c2-c3 r(c2,c1)={inherit}-r(c2,c3)={ass}
+CI2 c1-c2 r(c2,c1)={inherit}
+CI c1-c2-c3 r(c2,c1)={inherit}-r(c3,c1)={inherit}
+IAGG c1-c2 r(c2,c1)={inherit}-r(c2,c1)={agg}
+IPAG c1-c2-c3 r(c2,c1)={inherit}-r(c1,c3)={agg}
+MLI c1-c2-c3 r(c2,c1)={inherit}-r(c3,c2)={inherit}
+IASS c1-c2 r(c2,c1)={inherit}-r(c2,c1)={ass}
+SAGG c1 r(c1,c1)={agg}
+IIAGG c1-c2-c3 r(c2,c1)={inherit}-r(c3,c2)={inherit}-r(c3,c1)={agg}
+SASS c1 r(c1,c1)={ass}
+ICD c1-c2-c3 r(c2,c1)={inherit}-r(c2,c3)={dep}
+DCI c1-c2-c3 r(c2,c1)={inherit}-r(c3,c2)={dep}
+IPAS c1-c2-c3 r(c2,c1)={inherit}-r(c1,c3)={ass}
+AGPI c1-c2-c3 r(c2,c1)={inherit}-r(c3,c1)={agg}
+IPD c1-c2-c3 r(c2,c1)={inherit}-r(c1,c3)={dep}
+DPI c1-c2-c3 r(c2,c1)={inherit}-r(c3,c1)={dep}

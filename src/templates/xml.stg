@@ -1,0 +1,27 @@
+xmlFile (PatternsGroupInfo) ::= <<
+
+<PatternsGroupInfo.groupsInfo:{groupInfo|<groupView(groupInfo)>}> 
+>>
+
+groupView (groupInfo) ::= <<
+<"<">pattern<">">   
+ 
+    groupName : <groupInfo.groupName>
+    <groupInfo.instances:{instance|<instanceView(instance)>}> 
+<"<">/pattern<">"> 
+
+
+>>
+
+instanceView(instanceInfo) ::= <<
+ 
+<"<">instance<">">    
+    <instanceInfo.entriesInfo:{entryInfo|<entryView(entryInfo)>}>  
+<"<">/instance<">">
+
+>>
+
+entryView (entryInfo) ::= <<
+
+<entryInfo.classId> -> <entryInfo.role>
+>>

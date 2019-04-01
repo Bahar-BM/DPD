@@ -1,0 +1,23 @@
+Bridge-1-CI2&&IPAG {Implementor,ConImplementor}&&{Abstraction,RefinedAbstraction,Implementor} {1,2}_{Implementor}-0
+Composite-3-CI&&IAGG {Comp,ConComp,Composite}&&{Comp,Composite} {1,2}_{Comp,Composite}-SAGG {Comp}-CI&&IIAGG {Comp,ConComp,Composite}&&{Comp,Composite,Composite1} {1,2}_{Comp}-0
+Proxy-2-CI&&ICA {Subject,RealSubject,Proxy}&&{Subject,RealSubject,Proxy,RICA} {1,2}_{Subject,Proxy}-CI&&IASS {Subject,RealSubject,Proxy}&&{Subject,Proxy} {1,2}_{Subject,Proxy}-0
+Decorator-2-CI&&IAGG {Comp,ConComp,Decorator}&&{Comp,Decorator} {1,2}_{Comp,Decorator}-CI&&IAGG&&MLI {Comp,ConComp,Decorator}&&{Comp,Decorator}&&{Comp,Decorator,ConDecorator} {1,2}_{Comp,Decorator}-0
+Flyweight-1-AGPI&&CI2 {Flyweight,ConFlyweight,FlyweightFactory}&&{Flyweight,ConFlyweight} {1,2}_{Flyweight,ConFlyweight}-0
+Facade-1-ICD {Facade,ConFacade,Subsystem} {1}_{Facade,ConFacade}-0
+AbstractFactory-1-ICD&&CI2&&DCI {AbstractFactory,ConFactory,ConProduct}&&{AbstractProduct,ConProduct}&&{AbstractProduct,ConProduct,ConFactory} {1,3}_{ConFactory} {2,3}_{AbstractProduct} {1,2,3}_{ConProduct}-0
+Builder-1-AGPI&&ICA {Builder,ConBuilder,Director}&&{Builder,ConBuilder,Product} {1,2}_{Builder,ConBuilder}-0
+FactoryMethod-1-ICD&&DCI {Creator,ConCreator,ConProduct}&&{Product,ConProduct,ConCreator} {1,2}_{ConCreator,ConProduct}-0
+Prototype-2-CI2&&AGPI {Prototype,ConPrototype}&&{Prototype,ConPrototype,Client} {1,2}_{Prototype,ConPrototype}-AGPI {Prototype,ConPrototype,Client}-0
+Singleton-1-SASS {Singleton} {1}_{Singleton}-0
+ChainofResponsibility-1-SASS&&CI2 {Handler}&&{Handler,ConHandler} {1,2}_{Handler}-0
+Command-1-AGPI&&ICA {Command,ConCommand,Invoker}&&{Command,ConCommand,Receiver} {1,2}_{Command,ConCommand}-0
+Interpreter-1-CI&&IAGG&&IPD {AbstractExpression,TerminalExpression,NonterminalExpression}&&{AbstractExpression,NonterminalExpression}&&{AbstractExpression,TerminalExpression,Context} {1,2,3}_{AbstractExpression}-0
+Iterator-2-ICA&&ICD {Iterator,ConIterator,ConAggregation}&&{Aggregate,ConAggregation,ConIterator} {1,2}_{ConIterator,ConAggregation}-ICA&&DCI {Iterator,ConIterator,ConAggregation}&&{Iterator,ConIterator,ConAggregation} {1,2}_{ConIterator,ConAggregation}-0
+Mediator-2-CI2&&IPAS&&ICA {Colleague,ConColleague}&&{Colleague,ConColleague,Mediator}&&{Mediator,ConMediator,ConColleague} {1,2}_{Colleague} {2,3}_{Mediator}-CI2&&IPAS&&ICA {Colleague,ConColleague}&&{Colleague,ConColleague,Mediator}&&{Mediator,ConMediator,ConColleague} {1,2}_{Colleague} {2,3}_{Mediator}-0
+Memento-1-AGPI&&DPI {Memento,MementoImp,Cakertaker}&&{Memento,MementoImp,Originator} {1,2}_{Memento,MementoImp}-0
+Observer-1-AGPI&&ICD {Observer,ConObserver,Subject}&&{Observer,ConObserver,ConSubject} {1,2}_{Observer,ConObserver}-0
+State-1-AGPI&&CI2 {State,ConState,Context}&&{State,ConState} {1,2}_{State,ConState}-0
+Strategy-1-AGPI&&CI2 {Strategy,ConStrategy,Context}&&{Strategy,ConStrategy} {1,2}_{Strategy,ConStrategy}-0
+Template-1-CI2 {AbstractClass,ConClass} {1}_{AbstractClass}-0
+Visitor-1-AGPI&&DPI&&ICD {Element,ConElement,ObjectStructure}&&{Visitor,ConVisitor,Element}&&{Visitor,ConVisitor,ConElement} {1,2}_{Element} {2,3}_{Visitor}-0
+Adapter-1-ICA!&&CI {Target,Adapter,Adaptee}!&&{Target,Adapter,Adaptee} {1,2}_{Target,Adapter,Adaptee}-1
